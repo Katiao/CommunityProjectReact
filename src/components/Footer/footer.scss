@@ -1,0 +1,20 @@
+footer {
+	grid-column: full-start / full-end;
+	padding: 3rem 0 1.5rem 0;
+	text-align: center;
+	font-weight: bold;
+
+	& p {
+		margin-top: 1.5rem;
+		font-size: 1.2rem;
+
+		& a {
+			text-decoration: none;
+			color: inherit;
+
+			&:hover {
+				color: #fdb533;
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+// RESPONSIVE BREAKPOINTS
+//1200 / 16:
+$bp-largest: 75em; //1200px
+//800 / 16 :
+$bp-medium: 50em; // 800px
+//656 / 16
+$bp-small: 41em; // 656px
+
+.hire-me {
+	grid-column: full-start / full-end;
+	padding: 10rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	@media (max-width: $bp-small) {
+		padding: 5rem 2rem 5rem 2rem;
+	}
+
+	& h2 {
+		font-weight: 40rem;
+		position: relative;
+		margin-bottom: 5rem;
+
+		@media (max-width: $bp-small) {
+			font-size: 4.5rem;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 20%;
+			margin-top: 1.2rem;
+			height: 0.4rem;
+			bottom: -1rem;
+			left: 39%;
+			background-color: #fdb533;
+		}
+	}
+}

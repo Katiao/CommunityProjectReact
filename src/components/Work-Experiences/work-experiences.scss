@@ -1,0 +1,100 @@
+// RESPONSIVE BREAKPOINTS
+//1200 / 16:
+$bp-largest: 75em; //1200px
+//800 / 16 :
+$bp-medium: 50em; // 800px
+//656 / 16
+$bp-small: 41em; // 656px
+
+.work-experiences {
+	grid-column: full-start / full-end;
+	padding: 10rem 0;
+	background-color: #3c3c3d;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media (max-width: $bp-small) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	& h2 {
+		font-weight: 40rem;
+		position: relative;
+		margin-bottom: 5rem;
+
+		@media (max-width: $bp-small) {
+			font-size: 4.5rem;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 35%;
+			margin-top: 1.2rem;
+			height: 0.4rem;
+			bottom: -1rem;
+			left: 32%;
+			background-color: #fdb533;
+		}
+	}
+
+	& .center {
+		line-height: 2.5rem;
+		text-align: center;
+		margin-bottom: 5rem;
+	}
+}
+
+.works-cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 30rem);
+}
+
+@media (max-width: $bp-medium) {
+	.works-cards-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+.works-card {
+	border: solid;
+	border-width: 0.1rem;
+	border-color: gray;
+	background-color: rgb(68, 67, 67);
+	padding: 5rem 3rem;
+
+	& h3 {
+		font-size: 2.2rem;
+		font-weight: 50rem;
+	}
+
+	& p {
+		margin-top: 2rem;
+	}
+
+	& .company {
+		margin-top: 0.5rem;
+		font-size: 1.5rem;
+		color: gray;
+	}
+
+	& .date {
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+		color: gray;
+	}
+
+	&:hover {
+		background: #fdb533;
+		cursor: pointer;
+		transition: 0.6s;
+
+		& h3,
+		p,
+		.date,
+		.company {
+			color: #2b2c2c;
+		}
+	}
+}

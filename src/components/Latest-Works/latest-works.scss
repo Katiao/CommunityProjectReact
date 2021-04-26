@@ -1,0 +1,166 @@
+// RESPONSIVE BREAKPOINTS
+//1200 / 16:
+$bp-largest: 75em; //1200px
+//800 / 16 :
+$bp-medium: 50em; // 800px
+//656 / 16
+$bp-small: 41em; // 656px
+
+.latest-works {
+	grid-column: full-start / full-end;
+	padding: 10rem 0;
+
+	@media (max-width: $bp-small) {
+		padding: 5rem 2rem 5rem 2rem;
+	}
+
+	&-text-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& h2 {
+			font-weight: 40rem;
+			position: relative;
+			margin-bottom: 5rem;
+
+			@media (max-width: $bp-small) {
+				font-size: 4.5rem;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 40%;
+				margin-top: 1.2rem;
+				height: 0.4rem;
+				bottom: -1rem;
+				left: 30%;
+				background-color: #fdb533;
+			}
+		}
+
+		& p {
+			text-align: center;
+			line-height: 2.5rem;
+		}
+
+		& ul {
+			display: flex;
+			list-style: none;
+			justify-content: center;
+			color: whitesmoke;
+			padding: 5rem 0;
+			gap: 4.2rem;
+			font-size: 1.8rem;
+
+			& li {
+				cursor: pointer;
+				&:hover {
+					color: #feb633;
+				}
+			}
+		}
+	}
+
+	/* cards grid */
+	&-cards {
+		display: grid;
+		margin: 0 10rem 0 10rem;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 20vw);
+		gap: 1.5rem;
+
+		@media (max-width: $bp-medium) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(4, 40vw);
+		}
+
+		@media (max-width: $bp-small) {
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(8, 60vw);
+			row-gap: 3rem;
+		}
+	}
+}
+
+.cardOne {
+	grid-row: 1 / span 2;
+	grid-column: 1 / span 2;
+
+	@media (max-width: $bp-medium) {
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+}
+.cardEight {
+	grid-row: 3 / 4;
+	grid-column: 3 / span 2;
+
+	@media (max-width: $bp-medium) {
+		grid-column: 2 / 3;
+	}
+	@media (max-width: $bp-small) {
+		grid-row: 7 / 8;
+		grid-column: 1 / 2;
+	}
+}
+
+/* cards overlay effect */
+
+.cardhover {
+	position: relative;
+
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 1;
+	}
+
+	&:hover img {
+		opacity: 0.5;
+	}
+
+	& .overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		bottom: 4.5rem;
+		opacity: 0;
+		line-height: 1rem;
+		transition: all 0.6s;
+		background: rgba(247, 212, 86, 0.7);
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		& h3 {
+			margin-bottom: 3rem;
+			font-size: 2rem;
+			cursor: pointer;
+		}
+
+		& i {
+			margin-bottom: 2rem;
+		}
+
+		/* adding the animation push up when hovering over: targeting every direct child of the overlay */
+		& > * {
+			transform: translateY(2rem);
+			transition: transform 0.6s;
+		}
+
+		&:hover {
+			opacity: 1;
+
+			& > * {
+				transform: translateY(0);
+			}
+		}
+	}
+}

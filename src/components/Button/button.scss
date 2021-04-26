@@ -1,0 +1,17 @@
+.yellow-button {
+	background-color: #fdb533;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 6rem;
+	padding: 0 4rem;
+	color: white;
+	border: 0.1rem solid #fdb533;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.yellow-button:hover {
+	background-color: #3c3c3d;
+	color: #fdb533;
+}
