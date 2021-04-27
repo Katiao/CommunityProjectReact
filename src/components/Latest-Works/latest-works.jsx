@@ -23,7 +23,7 @@ function LatestWorks() {
 				<div className='cardOne cardhover'>
 					<img
 						id='large-img'
-						src='../../Images/card-six.jpg'
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513775/card-six_kbha9z.jpg'
 						alt='Latest Works Image 1'
 					/>
 					<div className='overlay1 overlay'>
@@ -33,7 +33,10 @@ function LatestWorks() {
 					</div>
 				</div>
 				<div className='cardTwo cardhover'>
-					<img src='images/card-two.jpg' alt='Latest Works Image 2' />
+					<img
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513732/card-two_ffbfeu.jpg'
+						alt='Latest Works Image 2'
+					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
 						<h3>Project Two</h3>
@@ -41,7 +44,10 @@ function LatestWorks() {
 					</div>
 				</div>
 				<div className='cardThree cardhover'>
-					<img src='images/card-three.jpg' alt='Latest Works Image 3' />
+					<img
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513747/card-three_n45iqu.jpg'
+						alt='Latest Works Image 3'
+					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
 						<h3>Project Three</h3>
@@ -49,7 +55,10 @@ function LatestWorks() {
 					</div>
 				</div>
 				<div className='cardFour cardhover'>
-					<img src='images/card-four.jpg' alt='Latest Works Image 4' />
+					<img
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513755/card-four_a5swys.jpg'
+						alt='Latest Works Image 4'
+					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
 						<h3>Project Four</h3>
@@ -57,7 +66,10 @@ function LatestWorks() {
 					</div>
 				</div>
 				<div className='cardFive cardhover'>
-					<img src='images/card-five.jpg' alt='Latest Works Image 5' />
+					<img
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513761/card-five_pmupac.jpg'
+						alt='Latest Works Image 5'
+					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
 						<h3>Project Five</h3>
@@ -65,7 +77,10 @@ function LatestWorks() {
 					</div>
 				</div>
 				<div className='cardSix cardhover'>
-					<img src='images/card-eight.jpg' alt='Latest Works Image 6' />
+					<img
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513788/card-eight_ry96qf.jpg'
+						alt='Latest Works Image 6'
+					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
 						<h3>Project Six</h3>
@@ -73,7 +88,10 @@ function LatestWorks() {
 					</div>
 				</div>
 				<div className='cardSeven cardhover'>
-					<img src='images/card-seven.jpg' alt='Latest Works Image 7' />
+					<img
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513781/card-seven_jz1byd.jpg'
+						alt='Latest Works Image 7'
+					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
 						<h3>Project Seven</h3>
@@ -83,7 +101,7 @@ function LatestWorks() {
 				<div className='cardEight cardhover'>
 					<img
 						id='wide-img'
-						src='images/card_one.jpg'
+						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513721/card_one_zst8t3.jpg'
 						alt='Latest Works Image 8'
 					/>
 					<div className='overlay8 overlay'>

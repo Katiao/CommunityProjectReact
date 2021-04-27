@@ -1,4 +1,5 @@
 import './about-me.scss';
+import Button from '../Button/button';
 
 function AboutMe() {
 	return (
@@ -16,8 +17,8 @@ function AboutMe() {
 				</p>
 
 				<div className='about-me-buttons'>
-					<button className='yellow-button'>View Work</button>
-					<button className='grey-button'>Download CV</button>
+					<Button btnClass='yellow-button' text='View Work' />
+					<Button btnClass='grey-button' text='Download CV' />
 				</div>
 			</div>
 		</section>

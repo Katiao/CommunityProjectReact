@@ -1,4 +1,5 @@
 import './contact-me.scss';
+import Button from '../Button/button';
 
 function ContactMe() {
 	return (
@@ -104,10 +105,10 @@ function ContactMe() {
 					rows='8'
 					required></textarea>
 
-				<input
-					className='contact-form-button yellow-button'
+				<Button
+					btnClass='contact-form-button yellow-button'
+					text='Send Message'
 					type='submit'
-					value='SEND MESSAGE'
 				/>
 			</form>
 		</section>

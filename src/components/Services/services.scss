@@ -82,7 +82,7 @@ $bp-small: 41em; // 656px
 			rgba(39, 150, 236, 0.9),
 			rgba(39, 150, 236, 0.9)
 		),
-		url(../../Images/laptop.jpg);
+		url('../../Assets/Images/laptop.jpg');
 
 	justify-self: end;
 }
@@ -93,7 +93,7 @@ $bp-small: 41em; // 656px
 			rgba(250, 180, 32, 0.9),
 			rgba(250, 180, 32, 0.9)
 		),
-		url('../../Images/desk.jpg');
+		url('../../Assets/Images/desk.jpg');
 	justify-self: start;
 }
 .card3 {
@@ -102,7 +102,7 @@ $bp-small: 41em; // 656px
 			rgba(209, 61, 196, 0.9),
 			rgba(209, 61, 196, 0.9)
 		),
-		url('../../Images/applicatin.jpg');
+		url('../../Assets/Images/applicatin.jpg');
 	justify-self: end;
 }
 
@@ -112,7 +112,7 @@ $bp-small: 41em; // 656px
 			rgba(22, 202, 80, 0.9),
 			rgba(22, 202, 80, 0.9)
 		),
-		url('../../Images/web-design.jpg');
+		url('../../Assets/Images/web-design.jpg');
 	justify-self: start;
 }
 

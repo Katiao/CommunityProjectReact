@@ -1,5 +1,6 @@
-import React from 'react';
 import './header.scss';
+import Button from '../Button/button';
+import heroImg from '../../Assets/Images/katia-img.jpg';
 
 function Header() {
 	return (
@@ -7,10 +8,13 @@ function Header() {
 			<div className='hero-text'>
 				<h1>I'm Katia</h1>
 				<h3>Front-End Web Developer</h3>
-				<button className='yellow-button'>Hire Me</button>
+				<Button
+					btnClass='yellow-button'
+					text='Hire Me'
+					message='Send me an email at katia@example.com or send me a message using the contact form below'
+				/>
 			</div>
-
-			<img src='../../Images/katia-img.jpg' alt='photo of Katia' />
+			<img src={heroImg} alt='photo of Katia' />
 		</header>
 	);
 }
