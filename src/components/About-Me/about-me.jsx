@@ -1,10 +1,11 @@
 import './about-me.scss';
 import Button from '../Button/button';
+import Heading2 from '../Heading-2/heading-2';
 
 function AboutMe() {
 	return (
 		<section className='about-me'>
-			<h2 className=''>About Me</h2>
+			<Heading2 text='About Me' />
 			<div className='about-me-content'>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

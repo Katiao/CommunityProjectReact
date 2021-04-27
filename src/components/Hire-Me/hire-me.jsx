@@ -1,10 +1,11 @@
 import './hire-me.scss';
 import Button from '../Button/button';
+import Heading2 from '../Heading-2/heading-2';
 
 function HireMe() {
 	return (
 		<section className='hire-me'>
-			<h2>Have a Project in Mind?</h2>
+			<Heading2 text='Have a Project in Mind?' />
 			<Button
 				btnClass='grey-button'
 				text='Hire Me'

@@ -19,26 +19,6 @@ $bp-small: 41em; // 656px
 	justify-items: center;
 	align-items: center;
 
-	& h2 {
-		font-weight: 40rem;
-		position: relative;
-
-		@media (max-width: $bp-small) {
-			font-size: 4.5rem;
-		}
-
-		&::before {
-			content: '';
-			position: absolute;
-			width: 50%;
-			margin-top: 1.2rem;
-			height: 0.4rem;
-			bottom: -1rem;
-			right: 25%;
-			background-color: #fdb533;
-		}
-	}
-
 	&-content {
 		padding-right: 15rem;
 		@media (max-width: $bp-small) {

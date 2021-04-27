@@ -14,7 +14,7 @@ function Header() {
 					message='Send me an email at katia@example.com or send me a message using the contact form below'
 				/>
 			</div>
-			<img src={heroImg} alt='photo of Katia' />
+			<img src={heroImg} alt='Katia' />
 		</header>
 	);
 }

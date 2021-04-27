@@ -1,11 +1,12 @@
 import './contact-me.scss';
 import Button from '../Button/button';
+import Heading2 from '../Heading-2/heading-2';
 
 function ContactMe() {
 	return (
 		<section className='contact'>
 			<div className='contact-title'>
-				<h2>Contact Me</h2>
+				<Heading2 text='Contact Me' headingClass='contact-me' />
 			</div>
 			<div className='contact-info'>
 				<h4>Contact Info</h4>
@@ -55,7 +56,7 @@ function ContactMe() {
 				</ul>
 			</div>
 			<form className='contact-form' id='form' action=''>
-				<label className='contact-form-name-label' for='name'>
+				<label className='contact-form-name-label' htmlFor='name'>
 					NAME
 				</label>
 				<input
@@ -67,7 +68,7 @@ function ContactMe() {
 					required
 				/>
 
-				<label className='contact-form-phone-label' for='number'>
+				<label className='contact-form-phone-label' htmlFor='number'>
 					PHONE NUMBER (optional)
 				</label>
 				<div className='contact-form-number-control'>
@@ -81,7 +82,7 @@ function ContactMe() {
 					<small>Error message</small>
 				</div>
 
-				<label className='contact-form-email-label' for='email'>
+				<label className='contact-form-email-label' htmlFor='email'>
 					EMAIL
 				</label>
 				<input
@@ -93,12 +94,12 @@ function ContactMe() {
 					required
 				/>
 
-				<label className='contact-form-message-label' for='message'>
+				<label className='contact-form-message-label' htmlFor='message'>
 					YOUR MESSAGE
 				</label>
 				<textarea
 					className='contact-form-message-input contact-form-input'
-					minlength='10'
+					minLength='10'
 					id='message'
 					name='message'
 					placeholder='Your Message'

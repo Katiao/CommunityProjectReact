@@ -1,10 +1,11 @@
+import Heading2 from '../Heading-2/heading-2';
 import './latest-works.scss';
 
 function LatestWorks() {
 	return (
 		<section className='latest-works'>
 			<div className='latest-works-text-box'>
-				<h2>Latest Works</h2>
+				<Heading2 text='Latest Works' />
 				<p>
 					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 					officia deserunt mollit anim id <br />
@@ -24,7 +25,7 @@ function LatestWorks() {
 					<img
 						id='large-img'
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513775/card-six_kbha9z.jpg'
-						alt='Latest Works Image 1'
+						alt='Latest Works 1'
 					/>
 					<div className='overlay1 overlay'>
 						<i className='fas fa-search'></i>
@@ -35,7 +36,7 @@ function LatestWorks() {
 				<div className='cardTwo cardhover'>
 					<img
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513732/card-two_ffbfeu.jpg'
-						alt='Latest Works Image 2'
+						alt='Latest Works 2'
 					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
@@ -46,7 +47,7 @@ function LatestWorks() {
 				<div className='cardThree cardhover'>
 					<img
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513747/card-three_n45iqu.jpg'
-						alt='Latest Works Image 3'
+						alt='Latest Works 3'
 					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
@@ -57,7 +58,7 @@ function LatestWorks() {
 				<div className='cardFour cardhover'>
 					<img
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513755/card-four_a5swys.jpg'
-						alt='Latest Works Image 4'
+						alt='Latest Works 4'
 					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
@@ -68,7 +69,7 @@ function LatestWorks() {
 				<div className='cardFive cardhover'>
 					<img
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513761/card-five_pmupac.jpg'
-						alt='Latest Works Image 5'
+						alt='Latest Works 5'
 					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
@@ -79,7 +80,7 @@ function LatestWorks() {
 				<div className='cardSix cardhover'>
 					<img
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513788/card-eight_ry96qf.jpg'
-						alt='Latest Works Image 6'
+						alt='Latest Works 6'
 					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
@@ -90,7 +91,7 @@ function LatestWorks() {
 				<div className='cardSeven cardhover'>
 					<img
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513781/card-seven_jz1byd.jpg'
-						alt='Latest Works Image 7'
+						alt='Latest Works 7'
 					/>
 					<div className='overlay'>
 						<i className='fas fa-search'></i>
@@ -102,7 +103,7 @@ function LatestWorks() {
 					<img
 						id='wide-img'
 						src='https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513721/card_one_zst8t3.jpg'
-						alt='Latest Works Image 8'
+						alt='Latest Works 8'
 					/>
 					<div className='overlay8 overlay'>
 						<i className='fas fa-search'></i>

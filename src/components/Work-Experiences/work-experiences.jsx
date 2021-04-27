@@ -1,9 +1,10 @@
 import './work-experiences.scss';
+import Heading2 from '../Heading-2/heading-2';
 
 function WorkExperiences() {
 	return (
 		<section className='work-experiences'>
-			<h2>Work Experiences</h2>
+			<Heading2 text='Work Experiences' />
 			<p className='center'>
 				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 				officia deserunt mollit anim id <br /> est laborum. Sed ut perspiciatis

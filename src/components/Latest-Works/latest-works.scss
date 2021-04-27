@@ -19,27 +19,6 @@ $bp-small: 41em; // 656px
 		flex-direction: column;
 		align-items: center;
 
-		& h2 {
-			font-weight: 40rem;
-			position: relative;
-			margin-bottom: 5rem;
-
-			@media (max-width: $bp-small) {
-				font-size: 4.5rem;
-			}
-
-			&::before {
-				content: '';
-				position: absolute;
-				width: 40%;
-				margin-top: 1.2rem;
-				height: 0.4rem;
-				bottom: -1rem;
-				left: 30%;
-				background-color: #fdb533;
-			}
-		}
-
 		& p {
 			text-align: center;
 			line-height: 2.5rem;

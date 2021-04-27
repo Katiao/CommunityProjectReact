@@ -7,7 +7,7 @@ function Navigation() {
 				<div className='navbar-logo'>
 					<a href='index.html'>K.</a>
 				</div>
-				<button id='open' class='open'>
+				<button id='open' className='open'>
 					<i className='fas fa-bars fa-2x'></i>
 				</button>
 				<ul>
@@ -43,7 +43,8 @@ function Navigation() {
 					</li>
 				</ul>
 			</nav>
-			/* Navigation for mobile toggle menu */
+
+			{/* Navigation for mobile toggle menu */}
 			<div className='modal-container' id='modal'>
 				<div className='logo'>
 					<a href='index.html'>K.</a>

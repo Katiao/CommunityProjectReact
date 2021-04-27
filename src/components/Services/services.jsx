@@ -1,10 +1,11 @@
 import './services.scss';
+import Heading2 from '../Heading-2/heading-2';
 
 function Services() {
 	return (
 		<section className='services'>
 			<div className='services-text-box'>
-				<h2>Services</h2>
+				<Heading2 text='Services' />
 				<p>
 					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 					officia deserunt mollit anim id <br />
