@@ -13,25 +13,25 @@ function Closing() {
 					<a href=''>
 						<i className='fab fa-facebook-square'></i>
 					</a>
-					{'  '}
+					&nbsp;
 				</li>
 				<li>
 					<a href=''>
 						<i className='fab fa-twitter-square'></i>
 					</a>
-					{'  '}
+					&nbsp;
 				</li>
 				<li>
 					<a href=''>
 						<i className='fab fa-linkedin'></i>
 					</a>
-					{'  '}
+					&nbsp;
 				</li>
 				<li>
 					<a href=''>
 						<i className='fab fa-pinterest-square'></i>
 					</a>
-					{'  '}
+					&nbsp;
 				</li>
 			</ul>
 		</section>

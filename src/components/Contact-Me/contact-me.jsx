@@ -11,45 +11,46 @@ function ContactMe() {
 				<h4>Contact Info</h4>
 				<ul>
 					<li>
-						<i className='fas fa-search-location'></i> Munich, Germany
-					</li>{' '}
+						<i className='fas fa-search-location'></i>&nbsp; Munich, Germany
+					</li>
 					<br />
 					<li>
 						<i className='fas fa-envelope-square'></i>
-						{'  '} katia@example.com
-					</li>{' '}
+						&nbsp; katia@example.com
+					</li>
 					<br />
 					<li>
 						<i className='fas fa-phone'></i>
-						{'  '}+49123456789xxxx <br /> {'     '} +49123456789xxx
-					</li>{' '}
+						&nbsp; +49123456789xxxx <br /> &nbsp; &nbsp; &nbsp; +49123456789xxx
+					</li>
 					<br />
 					<li>
 						<i className='fas fa-wifi'></i>
-						{'  '}www.google.com
-					</li>{' '}
+						&nbsp; www.google.com
+					</li>
 					<br />
 					<li>
 						<span className='follow-me'> Follow Me</span>
-					</li>{' '}
+					</li>
 					<br />
 					<li>
-						<span className='follow' />
-						<a href='#'>
-							<i className='fab fa-facebook-f'></i>
-						</a>{' '}
-						{'  '}
-						<a href='#'>
-							<i className='fab fa-twitter'></i>
-						</a>{' '}
-						{'  '}
-						<a href='#'>
-							<i className='fab fa-linkedin-in'></i>
-						</a>{' '}
-						{'  '}
-						<a href='#'>
-							<i className='fab fa-pinterest-p'></i>
-						</a>
+						<span className='follow'>
+							<a href='#'>
+								<i className='fab fa-facebook-f'></i>
+							</a>{' '}
+							&nbsp;
+							<a href='#'>
+								<i className='fab fa-twitter'></i>
+							</a>{' '}
+							&nbsp;
+							<a href='#'>
+								<i className='fab fa-linkedin-in'></i>
+							</a>{' '}
+							&nbsp;
+							<a href='#'>
+								<i className='fab fa-pinterest-p'></i>
+							</a>
+						</span>
 					</li>
 				</ul>
 			</div>
@@ -67,7 +68,7 @@ function ContactMe() {
 				/>
 
 				<label className='contact-form-phone-label' for='number'>
-					PHONE NUMBER
+					PHONE NUMBER (optional)
 				</label>
 				<div className='contact-form-number-control'>
 					<input
