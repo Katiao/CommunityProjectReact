@@ -1,0 +1,68 @@
+.card1 {
+	background: linear-gradient(
+			to right,
+			rgba(39, 150, 236, 0.9),
+			rgba(39, 150, 236, 0.9)
+		),
+		url('../../Assets/Images/laptop.jpg');
+
+	justify-self: end;
+}
+
+.card2 {
+	background: linear-gradient(
+			to right,
+			rgba(250, 180, 32, 0.9),
+			rgba(250, 180, 32, 0.9)
+		),
+		url('../../Assets/Images/desk.jpg');
+	justify-self: start;
+}
+.card3 {
+	background: linear-gradient(
+			to right,
+			rgba(209, 61, 196, 0.9),
+			rgba(209, 61, 196, 0.9)
+		),
+		url('../../Assets/Images/applicatin.jpg');
+	justify-self: end;
+}
+
+.card4 {
+	background: linear-gradient(
+			to right,
+			rgba(22, 202, 80, 0.9),
+			rgba(22, 202, 80, 0.9)
+		),
+		url('../../Assets/Images/web-design.jpg');
+	justify-self: start;
+}
+
+.card {
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	padding: 8rem;
+
+	& h3 {
+		margin: 1.5rem 0;
+		color: white;
+		font-size: 3.2rem;
+	}
+
+	& p {
+		line-height: 3rem;
+		color: white;
+	}
+}
+
+/* to align the cards in the center when screen smaller than 849px */
+
+@media (max-width: 53em) {
+	.card1,
+	.card2,
+	.card3,
+	.card4 {
+		justify-self: center;
+	}
+}

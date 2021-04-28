@@ -1,5 +1,37 @@
 import './services.scss';
 import Heading2 from '../Heading-2/heading-2';
+import ServiceCard from '../Service-Card/service-card';
+
+const servicesContent = [
+	{
+		cardClass: 'card card1',
+		iconClass: 'fas fa-mobile-alt fa-4x',
+		title: 'Consulting',
+		description:
+			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+	},
+	{
+		cardClass: 'card card2',
+		iconClass: 'fas fa-window-restore fa-4x',
+		title: 'Web Development',
+		description:
+			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+	},
+	{
+		cardClass: 'card card3',
+		iconClass: 'fab fa-apple-pay fa-4x',
+		title: 'Web App Design',
+		description:
+			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+	},
+	{
+		cardClass: 'card card4',
+		iconClass: 'fas fa-palette fa-4x',
+		title: 'Web Design',
+		description:
+			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+	},
+];
 
 function Services() {
 	return (
@@ -13,42 +45,9 @@ function Services() {
 				</p>
 			</div>
 			<div className='services-cards'>
-				<div className='card card1'>
-					<i className='fas fa-mobile-alt fa-4x'></i>
-					<h3>Consulting</h3>
-					<p>
-						Duis aute irure dolor in reprehenderit in voluptate
-						<br />
-						velit esse cillum dolore eu fugiat
-					</p>
-				</div>
-				<div className='card card2'>
-					<i className='fas fa-window-restore fa-4x'></i>
-					<h3>Web Development</h3>
-					<p>
-						Duis aute irure dolor in reprehenderit in voluptate
-						<br />
-						velit esse cillum dolore eu fugiat
-					</p>
-				</div>
-				<div className='card card3'>
-					<i className='fab fa-apple-pay fa-4x'></i>
-					<h3>Web App Design</h3>
-					<p>
-						Duis aute irure dolor in reprehenderit in voluptate
-						<br />
-						velit esse cillum dolore eu fugiat
-					</p>
-				</div>
-				<div className='card card4'>
-					<i className='fas fa-palette fa-4x'></i>
-					<h3>Web Design</h3>
-					<p>
-						Duis aute irure dolor in reprehenderit in voluptate
-						<br />
-						velit esse cillum dolore eu fugiat
-					</p>
-				</div>
+				{servicesContent.map(service => {
+					return <ServiceCard service={service} />;
+				})}
 			</div>
 		</section>
 	);
