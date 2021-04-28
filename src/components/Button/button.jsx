@@ -10,7 +10,9 @@ function Button({ btnClass, text, message }) {
 
 	return (
 		<div onClick={handleClickButton}>
-			<button className={btnClass}>{text}</button>
+			<button type='button' className={btnClass}>
+				{text}
+			</button>
 			{state && <p>{message}</p>}
 		</div>
 	);

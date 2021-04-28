@@ -1,7 +1,6 @@
 import './service-card.scss';
 
-function ServiceCard(props) {
-	const { cardClass, iconClass, title, description } = props.service;
+function ServiceCard({ cardClass, iconClass, title, description }) {
 	const firstHalf = description.split(',')[0];
 	const secondHalf = description.split(',')[1];
 
