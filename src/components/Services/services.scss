@@ -11,7 +11,7 @@ $bp-small: 41em; // 656px
 	padding: 10rem 0;
 	background-color: #2b2c2c;
 
-	@media (max-width: $bp-small) {
+	@media screen and (max-width: $bp-small) {
 		padding: 5rem 2rem 5rem 2rem;
 	}
 

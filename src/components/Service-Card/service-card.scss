@@ -44,6 +44,10 @@
 	flex-direction: column;
 	padding: 8rem;
 
+	&:hover {
+		transform: translateY(-1.5rem) scale(1.03);
+	}
+
 	& h3 {
 		margin: 1.5rem 0;
 		color: white;
@@ -58,7 +62,7 @@
 
 /* to align the cards in the center when screen smaller than 849px */
 
-@media (max-width: 53em) {
+@media screen and (max-width: 53em) {
 	.card1,
 	.card2,
 	.card3,

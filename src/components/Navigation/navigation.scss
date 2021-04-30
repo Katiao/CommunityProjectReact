@@ -36,7 +36,7 @@ $bp-small: 41em; // 656px
 		font-weight: 900;
 		font-size: 5rem;
 		line-height: 6rem;
-		margin-left: 10rem;
+		margin-left: 5rem;
 		margin-top: 1.5rem;
 
 		& a {
@@ -92,7 +92,7 @@ $bp-small: 41em; // 656px
 	}
 }
 
-@media (min-width: $bp-medium) {
+@media screen and (min-width: $bp-medium) {
 	& .open {
 		display: none;
 	}
@@ -100,7 +100,7 @@ $bp-small: 41em; // 656px
 
 /*  menu item layout change with smaller screen */
 
-@media (max-width: 909px) {
+@media screen and (max-width: $bp-medium) {
 	.navbar {
 		align-items: stretch;
 		& ul {
@@ -135,6 +135,17 @@ $bp-small: 41em; // 656px
 					color: #fbd214;
 				}
 			}
+		}
+	}
+
+	&-logo {
+		font-weight: 900;
+		font-size: 5rem;
+		line-height: 6rem;
+		margin: 1.5rem 0 1.5rem 1rem;
+
+		& a {
+			color: #fbd214;
 		}
 	}
 

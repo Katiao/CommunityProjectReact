@@ -14,7 +14,7 @@ $bp-small: 41em; // 656px
 	align-items: center;
 	text-align: center;
 
-	@media (max-width: $bp-small) {
+	@media screen and (max-width: $bp-small) {
 		padding: 5rem 2rem 5rem 2rem;
 	}
 }

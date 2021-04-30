@@ -16,7 +16,7 @@ $bp-small: 41em; // 656px
 	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
 	justify-items: center;
 	align-items: center;
-	@media (max-width: $bp-small) {
+	@media screen and (max-width: $bp-small) {
 		padding-bottom: 5rem;
 	}
 
@@ -26,7 +26,7 @@ $bp-small: 41em; // 656px
 
 		& button {
 			align-self: flex-start;
-			@media (max-width: $bp-small) {
+			@media screen and (max-width: $bp-small) {
 				align-self: center;
 			}
 		}
@@ -48,7 +48,7 @@ $bp-small: 41em; // 656px
 		clip-path: circle(45%);
 		justify-self: start;
 
-		@media (max-width: $bp-small) {
+		@media screen and (max-width: $bp-small) {
 			justify-self: center;
 			margin-top: 4rem;
 		}
