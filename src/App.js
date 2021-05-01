@@ -8,6 +8,7 @@ import HireMe from './components/Hire-Me/hire-me';
 import ContactMe from './components/Contact-Me/contact-me';
 import Closing from './components/Closing/closing.jsx';
 import Footer from './components/Footer/footer';
+import Reviews from './components/Reviews/reviews';
 import './App.scss';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 			<AboutMe />
 			<Services />
 			<LatestWorks />
+			<Reviews />
 			<WorkExperiences />
 			<HireMe />
 			<ContactMe />

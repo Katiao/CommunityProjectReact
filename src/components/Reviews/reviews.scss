@@ -1,0 +1,45 @@
+// RESPONSIVE BREAKPOINTS
+//1200 / 16:
+$bp-largest: 75em; //1200px
+//800 / 16 :
+$bp-medium: 50em; // 800px
+//656 / 16
+$bp-small: 41em; // 656px
+
+.reviews-section {
+	grid-column: full-start / full-end;
+	padding: 5rem 0;
+	background-color: #3c3c3d;
+}
+
+.reviews-slider {
+	width: 85vw;
+	max-width: 70rem;
+	margin: 0 auto;
+	margin-top: 5rem;
+	text-align: center;
+	padding: 1rem 0;
+
+	& .reviews {
+		& h2 {
+			font-weight: 40rem;
+			position: relative;
+			margin-bottom: 8rem;
+
+			@media screen and (max-width: $bp-small) {
+				font-size: 4.5rem;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 8%;
+				margin-top: 1.2rem;
+				height: 0.4rem;
+				bottom: -1rem;
+				left: 46%;
+				background-color: #fdb533;
+			}
+		}
+	}
+}
