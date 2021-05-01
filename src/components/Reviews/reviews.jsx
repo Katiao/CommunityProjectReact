@@ -1,15 +1,68 @@
-import SingleReview from '../Single-Review/single-review';
+import React, { useState, useEffect } from 'react';
+import { FaQuoteRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import data from './data';
 import './reviews.scss';
 
 function Reviews() {
-	return (
-		<section className='reviews-section'>
-			<div className='reviews-slider'>
-				<div className='reviews'>
-					<h2>Reviews</h2>
-				</div>
+	const [people, setPeople] = useState(data);
+	const [index, setIndex] = useState(0);
 
-				<SingleReview />
+	//make sure that when we run out of slides or go over our max no. of slides, slide index changed
+	useEffect(() => {
+		const lastIndex = people.length - 1;
+		if (index < 0) {
+			setIndex(lastIndex);
+		}
+		if (index > lastIndex) {
+			setIndex(0);
+		}
+	}, [index, people]);
+
+	//slide auto-play
+	useEffect(() => {
+		let slider = setInterval(() => {
+			setIndex(index + 1);
+		}, 5000);
+		return () => clearInterval(slider);
+	}, [index]);
+
+	return (
+		<section className='section'>
+			<div className='reviews'>
+				<h2>Reviews</h2>
+			</div>
+			<div className='section-center'>
+				{people.map((person, personIndex) => {
+					const { id, img, name, job, text } = person;
+
+					let position = 'nextSlide';
+					if (personIndex === index) {
+						position = 'activeSlide';
+					}
+					if (
+						personIndex === index - 1 ||
+						(index === 0 && personIndex === people.length - 1)
+					) {
+						position = 'lastSlide';
+					}
+					return (
+						<article className={position} key={id}>
+							<img src={img} className='person-img' alt={name} />
+							<h4>{name}</h4>
+							<p className='title'>{job}</p>
+							<p className='text'>{text}</p>
+
+							<FaQuoteRight className='icon' />
+						</article>
+					);
+				})}
+				<button className='prev' onClick={() => setIndex(index - 1)}>
+					<FaChevronLeft />
+				</button>
+
+				<button className='next' onClick={() => setIndex(index + 1)}>
+					<FaChevronRight />
+				</button>
 			</div>
 		</section>
 	);

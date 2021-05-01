@@ -29,7 +29,15 @@ $bp-small: 41em; // 656px
 	&-cards {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+		@media screen and (max-width: $bp-small) {
+			grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+		}
+		@media screen and (min-width: $bp-largest) {
+			grid-template-columns: repeat(2, 50rem);
+		}
+
 		justify-items: center;
+		justify-content: center;
 		align-items: center;
 		column-gap: 4rem;
 		row-gap: 4rem;

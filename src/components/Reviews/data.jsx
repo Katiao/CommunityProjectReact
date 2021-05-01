@@ -1,4 +1,4 @@
-const reviews = [
+const data = [
 	{
 		id: 1,
 		img:
@@ -35,4 +35,4 @@ const reviews = [
 	},
 ];
 
-export default reviews;
+export default data;
