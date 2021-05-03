@@ -1,14 +1,16 @@
 import React from 'react';
 import './categories.scss';
 
-function Categories() {
+function Categories({ categories, filterWorks }) {
 	return (
 		<ul>
-			<li>All</li>
-			<li>Websites</li>
-			<li>Web Apps</li>
-			<li>Web tools</li>
-			<li>Web Design</li>
+			{categories.map((category, index) => {
+				return (
+					<li key={index} onClick={() => filterWorks(category)}>
+						{category}
+					</li>
+				);
+			})}
 		</ul>
 	);
 }

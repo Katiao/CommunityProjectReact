@@ -5,9 +5,22 @@ import worksData from './data';
 import Categories from '../Categories/categories';
 import Works from '../Works/works';
 
+//getting unique values from categories in data file. All add All for All button:
+const allCategories = ['All', ...new Set(worksData.map(item => item.category))];
+
 function LatestWorks() {
 	const [works, setWorks] = useState(worksData);
-	const [categories, setCategories] = useState([]);
+	const [categories, setCategories] = useState(allCategories);
+
+	const filterWorks = category => {
+		if (category === 'All') {
+			setWorks(worksData);
+			return;
+		}
+		const newWorks = worksData.filter(item => item.category === category);
+		setWorks(newWorks);
+	};
+
 	return (
 		<section className='latest-works'>
 			<div className='latest-works-text-box'>
@@ -17,8 +30,8 @@ function LatestWorks() {
 					officia deserunt mollit anim id <br />
 					est laborum. Sed ut perspiciatis unde omnis iste natus
 				</p>
-				<Categories />
-				<Works />
+				<Categories categories={categories} filterWorks={filterWorks} />
+				<Works works={works} />
 			</div>
 		</section>
 	);

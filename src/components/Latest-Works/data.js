@@ -3,7 +3,8 @@ const worksData = [
 		id: 1,
 		title: 'Project One',
 		category: 'Websites',
-		className: 'cardOne',
+		className: 'cardOne cardhover',
+		cssId: 'large-img',
 		subtitle: 'Sub-title',
 		img:
 			'https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513775/card-six_kbha9z.jpg',
@@ -11,7 +12,8 @@ const worksData = [
 	{
 		id: 2,
 		title: 'Project Two',
-		className: 'cardTwo',
+		className: 'cardTwo cardhover',
+		cssId: '',
 		subtitle: 'Sub-title',
 		category: 'Websites',
 		img:
@@ -20,7 +22,8 @@ const worksData = [
 	{
 		id: 3,
 		title: 'Project Three',
-		className: 'cardThree',
+		className: 'cardThree cardhover',
+		cssId: '',
 		subtitle: 'Sub-title',
 		category: 'Websites',
 		img:
@@ -29,7 +32,8 @@ const worksData = [
 	{
 		id: 4,
 		title: 'Project Four',
-		className: 'cardFour',
+		className: 'cardFour cardhover',
+		cssId: '',
 		subtitle: 'Sub-title',
 		category: 'Web Apps',
 		img:
@@ -38,7 +42,8 @@ const worksData = [
 	{
 		id: 5,
 		title: 'Project Five',
-		className: 'cardFive',
+		className: 'cardFive cardhover',
+		cssId: '',
 		subtitle: 'Sub-title',
 		category: 'Web tools',
 		img:
@@ -47,7 +52,8 @@ const worksData = [
 	{
 		id: 6,
 		title: 'Project Six',
-		className: 'cardSix',
+		className: 'cardSix cardhover',
+		cssId: '',
 		subtitle: 'Sub-title',
 		category: 'Web Apps',
 		img:
@@ -56,7 +62,8 @@ const worksData = [
 	{
 		id: 7,
 		title: 'Project Seven',
-		className: 'cardSeven',
+		className: 'cardSeven cardhover',
+		cssId: '',
 		subtitle: 'Sub-title',
 		category: 'Web Design',
 		img:
@@ -65,7 +72,8 @@ const worksData = [
 	{
 		id: 8,
 		title: 'Project Eight',
-		className: 'cardEight',
+		className: 'cardEight cardhover',
+		cssId: 'wide-img',
 		subtitle: 'Sub-title',
 		category: 'Web Design',
 		img:
