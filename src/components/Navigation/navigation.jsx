@@ -1,50 +1,46 @@
+import React, { useState, useRef, useEffect } from 'react';
 import './navigation.scss';
 import { FaBars } from 'react-icons/fa';
 import links from './data';
 
 function Navigation() {
+	const [showLinks, setShowLinks] = useState(false);
+	const linksContainerRef = useRef(null);
+	const linksRef = useRef(null);
+
+	//everytime showLinks changes, run callback function: which checks the height of the links to adjust the height of links container:
+	useEffect(() => {
+		const linksHeight = linksRef.current.getBoundingClientRect().height;
+		if (showLinks) {
+			linksContainerRef.current.style.height = `${linksHeight}px`;
+		} else {
+			linksContainerRef.current.style.height = '0px';
+		}
+	}, [showLinks]);
+
 	return (
 		<nav className='nav-center'>
 			<div className='nav-header'>
 				<div className='logo'>
 					<a href='index.html'>K.</a>
 				</div>
-				<button className='nav-toggle'>
+				<button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
 					<FaBars />
 				</button>
 			</div>
-			<div className='links-container'>
-				<ul className='links'>
-					<li>
-						<a className='menu' href='#'>
-							Home
-						</a>
-					</li>
-					<li>
-						<a className='menu' href='#'>
-							About Me
-						</a>
-					</li>
-					<li>
-						<a className='menu' href='#'>
-							Services
-						</a>
-					</li>
-					<li>
-						<a className='menu' href='#'>
-							Portfolio
-						</a>
-					</li>
-					<li>
-						<a className='menu' href='#'>
-							Contact
-						</a>
-					</li>
-					<li>
-						<a className='menu' href='#'>
-							Blog
-						</a>
-					</li>
+
+			<div className='links-container' ref={linksContainerRef}>
+				<ul className='links' ref={linksRef}>
+					{links.map(link => {
+						const { id, url, text } = link;
+						return (
+							<li key={id}>
+								<a className='menu' href={url}>
+									{text}
+								</a>
+							</li>
+						);
+					})}
 				</ul>
 			</div>
 		</nav>
@@ -52,3 +48,7 @@ function Navigation() {
 }
 
 export default Navigation;
+
+/* {`${
+	showLinks ? 'links-container show-container' : 'links-container'
+}`} */

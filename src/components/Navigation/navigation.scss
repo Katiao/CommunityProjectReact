@@ -56,25 +56,25 @@ $bp-small: 41em; // 656px
 			color: #fbd214;
 		}
 	}
+}
 
-	&-container {
-		height: 0;
-		overflow: hidden;
-		transition: all 0.3s linear;
-		margin-left: 2rem;
-		& .links {
-			list-style-type: none;
+.links-container {
+	height: 0;
+	overflow: hidden;
+	transition: all 0.3s linear;
+	margin-left: 2rem;
+	& .links {
+		list-style-type: none;
 
-			& a {
-				font-size: 1.7rem;
-				padding: 1rem 1.5rem 0.5rem 1.5rem;
-			}
+		& a {
+			font-size: 1.7rem;
+			padding: 1rem 1.5rem 0.5rem 1.5rem;
 		}
 	}
 }
 
 .show-container {
-	height: 10rem;
+	height: 25rem;
 }
 
 .nav-center {
