@@ -13,7 +13,7 @@ import './App.scss';
 
 function App() {
 	return (
-		<div>
+		<div className='page-container'>
 			<Navigation />
 			<Header />
 			<AboutMe />
