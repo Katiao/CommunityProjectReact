@@ -10,25 +10,25 @@ function Closing() {
 			</p>
 			<ul>
 				<li>
-					<a href='#'>
+					<a href='https://www.facebook.com/'>
 						<i className='fab fa-facebook-square'></i>
 					</a>
 					&nbsp;
 				</li>
 				<li>
-					<a href='#'>
+					<a href='https://twitter.com/'>
 						<i className='fab fa-twitter-square'></i>
 					</a>
 					&nbsp;
 				</li>
 				<li>
-					<a href='#'>
+					<a href='https://www.linkedin.com/'>
 						<i className='fab fa-linkedin'></i>
 					</a>
 					&nbsp;
 				</li>
 				<li>
-					<a href='#'>
+					<a href='https://www.pinterest.com/'>
 						<i className='fab fa-pinterest-square'></i>
 					</a>
 					&nbsp;

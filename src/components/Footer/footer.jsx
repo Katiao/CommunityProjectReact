@@ -5,7 +5,7 @@ function Footer() {
 		<footer>
 			<hr />
 			<p>
-				Built by <a href='#'>Katia</a>{' '}
+				Built by <a href='/'>Katia</a>{' '}
 			</p>
 		</footer>
 	);

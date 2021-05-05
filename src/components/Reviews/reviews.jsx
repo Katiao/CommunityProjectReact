@@ -4,8 +4,13 @@ import data from './data';
 import './reviews.scss';
 
 function Reviews() {
-	const [people, setPeople] = useState(data);
+	const [people, setPeople] = useState([]);
 	const [index, setIndex] = useState(0);
+
+	//This part is to pretend we're getting data from an API or from changing data source, to remove errors:
+	useEffect(() => {
+		setPeople(data);
+	}, []);
 
 	//make sure that when we run out of slides or go over our max no. of slides, slide index changed
 	useEffect(() => {

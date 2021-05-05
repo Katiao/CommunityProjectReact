@@ -5,7 +5,7 @@ function Works({ works }) {
 	return (
 		<div className='latest-works-cards'>
 			{works.map(work => {
-				const { id, title, category, className, cssId, subtitle, img } = work;
+				const { id, title, className, cssId, subtitle, img } = work;
 				return (
 					<div key={id} className={className}>
 						<img id={cssId} src={img} alt={title} />
