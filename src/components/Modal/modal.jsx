@@ -9,7 +9,7 @@ function Modal({ isModalOpen, close, image }) {
 				isModalOpen ? 'modal-overlay show-modal' : 'modal-overlay'
 			}`}>
 			<div className='modal-container'>
-				<img src={image} className='project-img' alt='Project Image' />
+				<img src={image} className='project-img' alt='Project' />
 				<button className='close-modal-btn' onClick={close}>
 					<FaTimes />
 				</button>
