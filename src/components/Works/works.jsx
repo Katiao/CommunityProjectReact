@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './works.scss';
+import Modal from '../Modal/modal';
 
 function Works({ works }) {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = () => {
+		setIsModalOpen(true);
+	};
+
+	const closeModal = () => {
+		setIsModalOpen(false);
+	};
+
 	return (
 		<div className='latest-works-cards'>
 			{works.map(work => {
@@ -11,8 +22,10 @@ function Works({ works }) {
 						<img id={cssId} src={img} alt={title} />
 						<div className='overlay1 overlay'>
 							<i className='fas fa-search'></i>
-							<h3>{title}</h3>
+							<h3 onClick={openModal}>{title}</h3>
 							<p>{subtitle}</p>
+							{/* prop drilling img prop here. To refactor using context API */}
+							<Modal isModalOpen={isModalOpen} close={closeModal} image={img} />
 						</div>
 					</div>
 				);

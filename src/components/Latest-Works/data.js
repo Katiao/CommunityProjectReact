@@ -7,7 +7,7 @@ const worksData = [
 		cssId: 'large-img',
 		subtitle: 'Sub-title',
 		img:
-			'https://res.cloudinary.com/dhgtbuxtl/image/upload/v1619513775/card-six_kbha9z.jpg',
+			'https://res.cloudinary.com/dhgtbuxtl/image/upload/c_scale,q_auto:best,w_240/v1620233250/card-six_kbha9z.jpg',
 	},
 	{
 		id: 2,
