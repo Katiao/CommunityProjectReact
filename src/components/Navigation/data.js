@@ -6,22 +6,22 @@ const links = [
 	},
 	{
 		id: 2,
-		url: '/about',
+		url: '#about-me',
 		text: 'About Me',
 	},
 	{
 		id: 3,
-		url: '/services',
+		url: '/',
 		text: 'Services',
 	},
 	{
 		id: 4,
-		url: '/portfolio',
+		url: '/',
 		text: 'Portfolio',
 	},
 	{
 		id: 5,
-		url: '/contact',
+		url: '/',
 		text: 'Contact',
 	},
 	{

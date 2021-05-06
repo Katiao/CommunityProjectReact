@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './navigation.scss';
 import { FaBars } from 'react-icons/fa';
 import links from './data';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
 	const [showLinks, setShowLinks] = useState(false);
@@ -35,9 +36,9 @@ function Navigation() {
 						const { id, url, text } = link;
 						return (
 							<li key={id}>
-								<a className='menu' href={url}>
+								<Link className='menu' to={url}>
 									{text}
-								</a>
+								</Link>
 							</li>
 						);
 					})}

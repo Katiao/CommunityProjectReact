@@ -4,7 +4,7 @@ import Heading2 from '../Heading-2/heading-2';
 
 function AboutMe() {
 	return (
-		<section className='about-me'>
+		<section className='about-me' id='about-me'>
 			<Heading2 text='About Me' />
 			<div className='about-me-content'>
 				<p>
