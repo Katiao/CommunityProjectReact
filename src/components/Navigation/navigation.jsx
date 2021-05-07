@@ -22,9 +22,9 @@ function Navigation() {
 	return (
 		<nav className='nav-center'>
 			<div className='nav-header'>
-				<div className='logo'>
-					<a href='index.html'>K.</a>
-				</div>
+				<Link className='logo' to='/'>
+					K.
+				</Link>
 				<button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
 					<FaBars />
 				</button>

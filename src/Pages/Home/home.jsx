@@ -8,9 +8,9 @@ import ContactMe from '../../components/Contact-Me/contact-me';
 import Closing from '../../components/Closing/closing.jsx';
 import Footer from '../../components/Footer/footer';
 import Reviews from '../../components/Reviews/reviews';
-import './App.scss';
+import './home.scss';
 
-function App() {
+function Home() {
 	return (
 		<div className='page-container'>
 			<Header />
@@ -27,4 +27,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Home;
