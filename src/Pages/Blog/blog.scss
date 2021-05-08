@@ -1,19 +1,39 @@
-.title-section {
+.dark-theme {
+	--clr-bcg: #54595f;
+	--clr-primary: #ffa7c4;
+	--clr-font: #fff;
+}
+
+.light-theme {
+	--clr-bcg: #fff;
+	--clr-primary: #d23669;
+	--clr-font: #54595f;
+}
+
+.blog-section {
+	background-color: var(--clr-bcg);
+	height: 100vh;
 	display: grid;
 	grid-template-columns: 3;
-	padding-top: 10rem;
-	justify-items: end;
+	grid-template-rows: repeat(2, max-content);
+	gap: 1rem;
 	align-items: center;
-	width: 90vw;
+	padding-top: 10rem;
+	align-items: center;
+
 	& h1 {
 		grid-column: 2/3;
+		padding-top: 2rem;
+		color: var(--clr-font);
 	}
 }
 
 .btn {
 	grid-column: 3/4;
-	background: #3c3c3d;
-	color: #fdb533;
+	margin-top: 2rem;
+	justify-self: start;
+	background: var(--clr-primary);
+	color: var(--clr-font);
 	padding: 0.25rem 0.5rem;
 	border-radius: 5px;
 	border-color: transparent;
@@ -25,9 +45,5 @@
 }
 
 .articles {
-	margin-top: 10rem;
-	width: 90vw;
-	//height: 80vw;
-	max-width: 600px;
-	margin: 0 auto;
+	grid-column: 2/3;
 }

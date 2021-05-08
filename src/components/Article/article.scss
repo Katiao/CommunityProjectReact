@@ -1,19 +1,30 @@
+.dark-theme {
+	--clr-bcg: #54595f;
+	--clr-primary: #ffa7c4;
+	--clr-font: #fff;
+}
+
+.light-theme {
+	--clr-bcg: #fff;
+	--clr-primary: #d23669;
+	--clr-font: #54595f;
+}
+
 .post {
-	color: whitesmoke;
+	color: var(--clr-font);
 	margin-top: 5rem;
 }
 
 .heading2 {
-	color: rgb(216, 142, 210);
+	color: var(--clr-primary);
 	text-transform: capitalize;
 	font-size: 2rem;
-	z-index: 500;
 }
 
 .post-info {
 	margin-bottom: 0.75rem;
 	font-style: italic;
-	color: whitesmoke;
+	color: var(--clr-font);
 
 	& span {
 		margin-right: 0.5rem;
