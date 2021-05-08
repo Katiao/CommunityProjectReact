@@ -1,6 +1,6 @@
 import React from 'react';
 import './article.scss';
-//import moment from 'moment';
+import moment from 'moment';
 
 function Article({ title, snippet, date, length }) {
 	return (
@@ -8,7 +8,7 @@ function Article({ title, snippet, date, length }) {
 		<div className='post'>
 			<h4 className='heading2'>{title}</h4>
 			<div className='post-info'>
-				<span>date</span>
+				<span>{moment(date).format('dddd Do, YYYY')}</span>
 				<span>{length} min read</span>
 			</div>
 			<p>{snippet}</p>
