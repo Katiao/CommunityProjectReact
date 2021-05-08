@@ -1,0 +1,21 @@
+.post {
+	color: whitesmoke;
+	margin-top: 5rem;
+}
+
+.heading2 {
+	color: rgb(216, 142, 210);
+	text-transform: capitalize;
+	font-size: 2rem;
+	z-index: 500;
+}
+
+.post-info {
+	margin-bottom: 0.75rem;
+	font-style: italic;
+	color: whitesmoke;
+
+	& span {
+		margin-right: 0.5rem;
+	}
+}

@@ -47,22 +47,6 @@ html {
 	grid-template-rows: 20rem, repeat(3, auto), 40vw, repeat(5, auto);
 }
 
-/* scrolling animation */
-
-.box.show {
-	animation: fadein 2s ease-out 0.15s;
-	animation-fill-mode: backwards;
-}
-
-@keyframes fadein {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
 // Typography
 
 body {

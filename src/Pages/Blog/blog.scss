@@ -1,7 +1,33 @@
-.intro {
-	color: whitesmoke;
-	display: flex;
-	height: 30rem;
-	justify-content: center;
+.title-section {
+	display: grid;
+	grid-template-columns: 3;
+	padding-top: 10rem;
+	justify-items: end;
 	align-items: center;
+	width: 90vw;
+	& h1 {
+		grid-column: 2/3;
+	}
+}
+
+.btn {
+	grid-column: 3/4;
+	background: #3c3c3d;
+	color: #fdb533;
+	padding: 0.25rem 0.5rem;
+	border-radius: 5px;
+	border-color: transparent;
+	text-transform: capitalize;
+	transition: all 0.3s linear;
+	font-weight: bold;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.articles {
+	margin-top: 10rem;
+	width: 90vw;
+	//height: 80vw;
+	max-width: 600px;
+	margin: 0 auto;
 }
