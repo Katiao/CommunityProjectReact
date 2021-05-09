@@ -2,7 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import './navigation.scss';
 import { FaBars } from 'react-icons/fa';
 import links from './data';
-import { Link } from 'react-router-dom';
+import { Link as Link2 } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
+const scrollToTop = () => {
+	scroll.scrollToTop();
+};
 
 function Navigation() {
 	const [showLinks, setShowLinks] = useState(false);
@@ -22,9 +27,9 @@ function Navigation() {
 	return (
 		<nav className='nav-center'>
 			<div className='nav-header'>
-				<Link className='logo' to='/'>
+				<button className='logo' onClick={scrollToTop}>
 					K.
-				</Link>
+				</button>
 				<button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
 					<FaBars />
 				</button>
@@ -32,16 +37,33 @@ function Navigation() {
 
 			<div className='links-container' ref={linksContainerRef}>
 				<ul className='links' ref={linksRef}>
+					<li>
+						<Link2 className='menu' to='/'>
+							Home
+						</Link2>
+					</li>
 					{links.map(link => {
 						const { id, url, text } = link;
 						return (
 							<li key={id}>
-								<Link className='menu' to={url}>
+								<Link
+									className='menu'
+									to={url}
+									smooth={true}
+									activeClass='active'
+									spy={true}
+									offest={-70}
+									duration={500}>
 									{text}
 								</Link>
 							</li>
 						);
 					})}
+					<li>
+						<Link2 className='menu' to='/blog'>
+							Blog
+						</Link2>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -49,7 +71,3 @@ function Navigation() {
 }
 
 export default Navigation;
-
-/* {`${
-	showLinks ? 'links-container show-container' : 'links-container'
-}`} */

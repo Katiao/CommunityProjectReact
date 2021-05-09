@@ -1,12 +1,7 @@
 const links = [
 	{
-		id: 1,
-		url: '/',
-		text: 'Home',
-	},
-	{
 		id: 2,
-		url: 'aboutme',
+		url: 'about-me',
 		text: 'About Me',
 	},
 	{
@@ -16,18 +11,13 @@ const links = [
 	},
 	{
 		id: 4,
-		url: 'portfolio',
+		url: 'latest-works',
 		text: 'Portfolio',
 	},
 	{
 		id: 5,
 		url: 'contact',
 		text: 'Contact',
-	},
-	{
-		id: 6,
-		url: '/blog',
-		text: 'Blog',
 	},
 ];
 

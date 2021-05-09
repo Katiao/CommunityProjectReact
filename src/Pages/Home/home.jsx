@@ -8,21 +8,31 @@ import ContactMe from '../../components/Contact-Me/contact-me';
 import Closing from '../../components/Closing/closing.jsx';
 import Footer from '../../components/Footer/footer';
 import Reviews from '../../components/Reviews/reviews';
+import Navigation from '../../components/Navigation/navigation';
 import './home.scss';
+import { animateScroll as scroll } from 'react-scroll';
+
+const scrollToTop = () => {
+	scroll.scrollToTop();
+};
 
 function Home() {
 	return (
 		<div className='page-container'>
-			<Header />
-			<AboutMe />
-			<Services />
-			<LatestWorks />
+			<Navigation />
+			<Header id='head' />
+			<AboutMe id='about-me' />
+			<Services id='services' />
+			<LatestWorks id='latest-works' />
 			<Reviews />
 			<WorkExperiences />
 			<HireMe />
-			<ContactMe />
+			<ContactMe id='contact' />
 			<Closing />
 			<Footer />
+			<button className='back-to-top' onClick={scrollToTop}>
+				Back to Top
+			</button>
 		</div>
 	);
 }

@@ -47,6 +47,15 @@
 	cursor: pointer;
 }
 
+.btn-home {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 1.5rem;
+	font-size: 1.5rem;
+	padding: 0.5rem 0.8rem;
+}
+
 .articles {
 	grid-column: 2/3;
 }

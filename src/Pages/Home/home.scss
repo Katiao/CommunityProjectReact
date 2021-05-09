@@ -73,3 +73,46 @@ h2 {
 p {
 	font-size: 1.5rem;
 }
+
+//back-top-top fixed button
+.back-to-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 1rem;
+	background-color: #fdb533;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 4rem;
+	padding: 0 2rem;
+	width: 15rem;
+	color: white;
+	border: 0.1rem solid #fdb533;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: #3c3c3d;
+		color: #fdb533;
+	}
+}
+
+.yellow-button {
+	background-color: #fdb533;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 6rem;
+	padding: 0 4rem;
+	width: 22rem;
+	color: white;
+	border: 0.1rem solid #fdb533;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: #3c3c3d;
+		color: #fdb533;
+	}
+}

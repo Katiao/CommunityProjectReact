@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './blog.scss';
 import { articles } from './data.js';
 import Article from '../../components/Article/article';
+import { Link } from 'react-router-dom';
 
 const getStorageTheme = () => {
 	let theme = 'dark-theme';
@@ -39,21 +40,12 @@ function Blog() {
 					return <Article key={item.id} {...item} />;
 				})}
 			</section>
+
+			<Link className='btn btn-home' to='/'>
+				Back Home
+			</Link>
 		</div>
 	);
 }
-
-/* function Article({ title, snippet, date, length }) {
-	return (
-		<article className='post'>
-			<h4 className='heading2'>This is a blog</h4>
-			<div className='post-info'>
-				<span>date</span>
-				<span>{length} min read</span>
-			</div>
-			<p>{snippet}</p>
-		</article>
-	);
-} */
 
 export default Blog;

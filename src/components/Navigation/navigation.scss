@@ -28,12 +28,16 @@ $bp-small: 41em; // 656px
 }
 
 .logo {
+	font-family: inherit;
+	font-size: 100%;
+	border: 0;
 	font-weight: 900;
 	font-size: 5rem;
 	line-height: 6rem;
 	margin-left: 2rem;
 	margin-top: 1.5rem;
 	color: #fbd214;
+	background-color: #2b2c2c;
 }
 
 .links {
@@ -48,8 +52,9 @@ $bp-small: 41em; // 656px
 
 		&:hover {
 			color: #fbd214;
+			cursor: pointer;
 		}
-		&:active {
+		& .active {
 			color: #fbd214;
 		}
 	}
@@ -117,6 +122,10 @@ $bp-small: 41em; // 656px
 	}
 	.logo {
 		margin-left: 4rem;
+		margin-bottom: 1rem;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	/* adding the line effect when you hover over item */
@@ -141,6 +150,9 @@ $bp-small: 41em; // 656px
 
 	.menu:hover::before {
 		width: 40%;
+	}
+	.menu .active {
+		color: #fbd214;
 	}
 
 	/* for the active link to stay underlined  */
