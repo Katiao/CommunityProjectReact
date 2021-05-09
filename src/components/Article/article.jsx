@@ -12,6 +12,7 @@ function Article({ title, snippet, date, length }) {
 				<span>{length} min read</span>
 			</div>
 			<p>{snippet}</p>
+			<button className='btn'>Read More</button>
 		</div>
 	);
 }

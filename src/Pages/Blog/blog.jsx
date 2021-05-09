@@ -3,8 +3,16 @@ import './blog.scss';
 import { articles } from './data.js';
 import Article from '../../components/Article/article';
 
+const getStorageTheme = () => {
+	let theme = 'dark-theme';
+	if (localStorage.getItem('theme')) {
+		theme = localStorage.getItem('theme');
+	}
+	return theme;
+};
+
 function Blog() {
-	const [theme, setTheme] = useState('dark-theme');
+	const [theme, setTheme] = useState(getStorageTheme());
 
 	const toggleTheme = () => {
 		if (theme === 'dark-theme') {
@@ -13,9 +21,10 @@ function Blog() {
 			setTheme('dark-theme');
 		}
 	};
-
+	//everytime I change the theme value, also change the key-value pair in local storage:
 	useEffect(() => {
 		document.documentElement.className = theme;
+		localStorage.setItem('theme', theme);
 	}, [theme]);
 
 	return (

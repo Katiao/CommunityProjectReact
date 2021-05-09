@@ -8,6 +8,7 @@
 	--clr-bcg: #fff;
 	--clr-primary: #d23669;
 	--clr-font: #54595f;
+	--clr-font-btn: whitesmoke;
 }
 
 .post {
@@ -28,5 +29,6 @@
 
 	& span {
 		margin-right: 0.5rem;
+		font-size: 1.2rem;
 	}
 }
