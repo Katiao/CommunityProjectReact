@@ -1,8 +1,9 @@
 import React from 'react';
 import './article.scss';
 import moment from 'moment';
+import { Link } from 'react-router-dom';
 
-function Article({ title, snippet, date, length }) {
+function Article({ id, title, snippet, date, length }) {
 	return (
 		/* this div should be replaced by article. article did not work */
 		<div className='post'>
@@ -12,7 +13,9 @@ function Article({ title, snippet, date, length }) {
 				<span>{length} min read</span>
 			</div>
 			<p>{snippet}</p>
-			<button className='btn'>Read More</button>
+			<Link to={`/article/${id}`} className='btn'>
+				Read More
+			</Link>
 		</div>
 	);
 }
