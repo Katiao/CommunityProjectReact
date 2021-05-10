@@ -7,13 +7,13 @@ function Article({ id, title, snippet, date, length }) {
 	return (
 		/* this div should be replaced by article. article did not work */
 		<div className='post'>
-			<h4 className='heading2'>{title}</h4>
+			<h4 className='heading'>{title}</h4>
 			<div className='post-info'>
 				<span>{moment(date).format('dddd Do, YYYY')}</span>
 				<span>{length} min read</span>
 			</div>
 			<p>{snippet}</p>
-			<Link to={`/article/${id}`} className='btn'>
+			<Link to={`/article/${id}`} className='btn btn-more'>
 				Read More
 			</Link>
 		</div>

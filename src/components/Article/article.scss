@@ -14,9 +14,13 @@
 .post {
 	color: var(--clr-font);
 	margin-top: 5rem;
+
+	& p {
+		margin-bottom: 0.5rem;
+	}
 }
 
-.heading2 {
+.heading {
 	color: var(--clr-primary);
 	text-transform: capitalize;
 	font-size: 2rem;
@@ -31,4 +35,8 @@
 		margin-right: 0.5rem;
 		font-size: 1.2rem;
 	}
+}
+
+.btn-more {
+	font-size: 1.5rem;
 }
