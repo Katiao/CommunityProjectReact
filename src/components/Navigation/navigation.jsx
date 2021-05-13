@@ -38,7 +38,10 @@ function Navigation() {
 			<div className='links-container' ref={linksContainerRef}>
 				<ul className='links' ref={linksRef}>
 					<li>
-						<Link2 className='menu' to='/'>
+						<Link2
+							className='menu'
+							to='/'
+							onClick={() => setShowLinks(!showLinks)}>
 							Home
 						</Link2>
 					</li>
@@ -48,6 +51,7 @@ function Navigation() {
 							<li key={id}>
 								<Link
 									className='menu'
+									onClick={() => setShowLinks(!showLinks)}
 									to={url}
 									smooth={true}
 									activeClass='active'
