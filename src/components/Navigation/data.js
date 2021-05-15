@@ -2,22 +2,22 @@ const links = [
 	{
 		id: 2,
 		url: 'about-me',
-		text: 'About Me',
+		text: 'about me',
 	},
 	{
 		id: 3,
 		url: 'services',
-		text: 'Services',
+		text: 'services',
 	},
 	{
 		id: 4,
 		url: 'latest-works',
-		text: 'Portfolio',
+		text: 'portfolio',
 	},
 	{
 		id: 5,
 		url: 'contact',
-		text: 'Contact',
+		text: 'contact',
 	},
 ];
 
