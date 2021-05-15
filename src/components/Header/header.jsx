@@ -8,11 +8,7 @@ function Header() {
 			<div className='hero-text'>
 				<h1>I'm Katia</h1>
 				<h3>Front-End Web Developer</h3>
-				<Button
-					btnClass='yellow-button'
-					text='Hire Me'
-					message='Send me an email at katia@example.com or send me a message using the contact form below'
-				/>
+				<Button btnClass='yellow-button' text='Hire Me' />
 			</div>
 			<img src={heroImg} alt='Katia' />
 		</header>

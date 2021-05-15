@@ -11,11 +11,7 @@ function HireMe() {
 				distinctio nostrum porro asperiores! <br />
 				Quidem blanditiis eveniet harum cum possimus iste.
 			</p>
-			<Button
-				btnClass='grey-button'
-				text='Hire Me'
-				message='Send me an email at katia@example.com or send me a message using the contact form below'
-			/>
+			<Button btnClass='grey-button' text='Hire Me' />
 		</section>
 	);
 }

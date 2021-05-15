@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
 import './button.scss';
 
-function Button({ btnClass, text, message }) {
-	const [state, setState] = useState(false);
-
-	function handleClickButton() {
-		setState(prevState => !prevState);
-	}
-
+function Button({ text, btnClass }) {
 	return (
-		<div onClick={handleClickButton}>
+		<div>
 			<button type='button' className={btnClass}>
 				{text}
 			</button>
-			{state && <p>{message}</p>}
 		</div>
 	);
 }
