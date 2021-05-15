@@ -11,19 +11,25 @@ $bp-small: 41em; // 656px
 	justify-self: center;
 
 	@media screen and (max-width: $bp-small) {
-		justify-self: start;
-		margin-bottom: 2rem;
+		margin-bottom: 5rem;
 	}
 
 	& h4 {
 		margin-bottom: 3rem;
 		font-size: 2rem;
 		font-weight: bold;
+		@media screen and (max-width: $bp-small) {
+			text-align: center;
+		}
 	}
 
 	& ul {
 		list-style-type: none;
-		font-size: 1.4rem;
+		font-size: 1.8rem;
+		@media screen and (max-width: $bp-small) {
+			font-size: 2rem;
+			text-align: center;
+		}
 	}
 
 	& .follow-me {

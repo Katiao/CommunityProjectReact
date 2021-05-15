@@ -32,6 +32,7 @@ h2 {
 	@media screen and (max-width: $bp-small) {
 		font-size: 4.5rem;
 		text-align: center;
+		position: relative;
 	}
 
 	&::before {
