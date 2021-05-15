@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaQuoteRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import data from './data';
+import Heading2 from '../Heading-2/heading-2';
 import './reviews.scss';
 
 function Reviews() {
@@ -33,9 +34,7 @@ function Reviews() {
 
 	return (
 		<section className='section'>
-			<div className='reviews'>
-				<h2>Reviews</h2>
-			</div>
+			<Heading2 text='Reviews' headingClass='reviews' />
 			<div className='section-center'>
 				{people.map((person, personIndex) => {
 					const { id, img, name, job, text } = person;

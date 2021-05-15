@@ -18,11 +18,11 @@ h2 {
 	&::before {
 		content: '';
 		position: absolute;
-		width: 50%;
+		width: 100%;
 		margin-top: 1.2rem;
 		height: 0.4rem;
 		bottom: -1rem;
-		right: 25%;
+		right: 0;
 		background-color: #fdb533;
 	}
 }
@@ -32,17 +32,37 @@ h2 {
 	@media screen and (max-width: $bp-small) {
 		font-size: 4.5rem;
 		text-align: center;
-		justify-self: start;
 	}
 
 	&::before {
 		content: '';
 		position: absolute;
-		width: 35%;
+		width: 100%;
 		margin-top: 1.2rem;
 		height: 0.4rem;
 		bottom: -1rem;
-		left: 30%;
+		left: 0;
+		background-color: #fdb533;
+	}
+}
+
+.reviews {
+	font-weight: 40rem;
+	margin-bottom: 8rem;
+	padding-top: 4rem;
+
+	@media screen and (max-width: $bp-small) {
+		font-size: 4.5rem;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		margin-top: 1.2rem;
+		height: 0.4rem;
+		bottom: -1rem;
+		left: 0;
 		background-color: #fdb533;
 	}
 }
