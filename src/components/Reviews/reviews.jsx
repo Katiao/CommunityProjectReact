@@ -52,7 +52,7 @@ function Reviews() {
 					return (
 						<article className={position} key={id}>
 							<img src={img} className='person-img' alt={name} />
-							<h4>{name}</h4>
+							<h4 className='name'>{name}</h4>
 							<p className='title'>{job}</p>
 							<p className='text'>{text}</p>
 
