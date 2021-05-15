@@ -5,7 +5,7 @@ export const servicesData = [
 		iconClass: 'fas fa-mobile-alt fa-4x',
 		title: 'Consulting',
 		description:
-			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+			'Duis aute irure dolor in reprehenderit in, voluptate velit esse cillum dolore eu fugiat',
 	},
 	{
 		id: 2,
@@ -13,7 +13,7 @@ export const servicesData = [
 		iconClass: 'fas fa-window-restore fa-4x',
 		title: 'Web Development',
 		description:
-			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+			'Duis aute irure dolor in reprehenderit in, voluptate velit esse cillum dolore eu fugiat',
 	},
 	{
 		id: 3,
@@ -21,7 +21,7 @@ export const servicesData = [
 		iconClass: 'fab fa-apple-pay fa-4x',
 		title: 'Web App Design',
 		description:
-			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+			'Duis aute irure dolor in reprehenderit in, voluptate velit esse cillum dolore eu fugiat',
 	},
 	{
 		id: 4,
@@ -29,6 +29,6 @@ export const servicesData = [
 		iconClass: 'fas fa-palette fa-4x',
 		title: 'Web Design',
 		description:
-			'Duis aute irure dolor in reprehenderit in voluptate, velit esse cillum dolore eu fugiat',
+			'Duis aute irure dolor in reprehenderit in, voluptate velit esse cillum dolore eu fugiat',
 	},
 ];

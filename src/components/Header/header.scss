@@ -28,12 +28,6 @@ $bp-small: 41em; // 656px
 			align-items: center;
 			text-align: center;
 		}
-		/* & button {
-			align-self: flex-start;
-			@media screen and (max-width: $bp-small) {
-				align-self: center;
-			}
-		} */
 	}
 
 	&-text h1 {
@@ -49,7 +43,6 @@ $bp-small: 41em; // 656px
 
 	& img {
 		width: 70%;
-
 		justify-self: start;
 		border-radius: 49%;
 		border: 1px solid #fdb533;

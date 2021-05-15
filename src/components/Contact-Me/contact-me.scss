@@ -28,12 +28,11 @@ $bp-small: 41em; // 656px
 			justify-self: center;
 			align-self: center;
 			font-size: 4.5rem;
-			padding: 5rem 24rem 5rem 0;
 		}
 	}
 
 	@media screen and (max-width: $bp-small) {
-		padding: 5rem 2rem 5rem 2rem;
+		padding: 10rem 2rem;
 
 		grid-template-columns: auto;
 		grid-template-areas:

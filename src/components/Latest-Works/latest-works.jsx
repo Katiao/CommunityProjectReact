@@ -29,7 +29,7 @@ function LatestWorks() {
 	return (
 		<section className='latest-works'>
 			<div className='latest-works-text-box'>
-				<Heading2 text='Latest Works' />
+				<Heading2 text='Portfolio' />
 				<p>
 					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 					officia deserunt mollit anim id <br />
