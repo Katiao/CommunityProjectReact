@@ -52,6 +52,7 @@ function Form() {
 				value={person.number}
 				onChange={handleChange}
 				pattern='^\+(?:[0-9] ?){6,14}[0-9]$'
+				required
 			/>
 
 			<label className='contact-form-email-label' htmlFor='email'>

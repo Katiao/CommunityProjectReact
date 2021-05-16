@@ -23,7 +23,7 @@ $bp-small: 41em; // 656px
 	}
 
 	&-input {
-		color: #777777;
+		color: #d1cdcd;
 		background-color: #363737;
 		border: none;
 		outline: none;
@@ -34,9 +34,13 @@ $bp-small: 41em; // 656px
 
 		&:focus {
 			border-bottom: 3px solid #2ecc71;
+			color: #363737;
+			background-color: whitesmoke;
 		}
 		&:focus:invalid {
 			border-bottom: 3px solid #fd9533;
+			color: #363737;
+			background-color: whitesmoke;
 		}
 	}
 
