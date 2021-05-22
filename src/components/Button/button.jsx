@@ -3,7 +3,7 @@ import './button.scss';
 function Button({ text, btnClass }) {
 	return (
 		<div>
-			<button type='button' className={btnClass}>
+			<button type='submit' className={btnClass}>
 				{text}
 			</button>
 		</div>

@@ -20,10 +20,11 @@ $bp-small: 41em; // 656px
 
 	& label {
 		font-size: 1.5rem;
+		letter-spacing: 2px;
 	}
 
 	&-input {
-		color: #d1cdcd;
+		color: whitesmoke;
 		background-color: #363737;
 		border: none;
 		outline: none;
@@ -33,14 +34,17 @@ $bp-small: 41em; // 656px
 		font-family: inherit;
 
 		&:focus {
-			border-bottom: 3px solid #2ecc71;
-			color: #363737;
-			background-color: whitesmoke;
+			background-color: #363737;
 		}
+
+		&:valid {
+			border-bottom: 3px solid #2ecc71;
+			background-color: #363737;
+		}
+
 		&:focus:invalid {
 			border-bottom: 3px solid #fd9533;
-			color: #363737;
-			background-color: whitesmoke;
+			background-color: #363737;
 		}
 	}
 
@@ -116,5 +120,29 @@ $bp-small: 41em; // 656px
 		margin-top: 1.5rem;
 		width: 20rem;
 		font-size: 1.5rem;
+		font-family: 'Roboto', sans-serif;
+		letter-spacing: 2px;
+		text-transform: uppercase;
 	}
+}
+::placeholder {
+	color: #d3d0d0;
+	opacity: 0.7;
+}
+//hidden by default, only appears to show error / success message when form submitted
+.message-container {
+	grid-area: four;
+	color: #363737;
+	background-color: #2ecc71;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 1rem 5rem;
+	justify-self: start;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+}
+.hidden {
+	visibility: hidden;
+	display: none;
 }

@@ -15,7 +15,8 @@ $bp-small: 41em; // 656px
 	grid-template-rows: (10rem, 1fr);
 	grid-template-areas:
 		' . one one '
-		'two three three';
+		'two three three'
+		'. four four';
 	gap: 1.5rem;
 
 	&-title {
@@ -24,12 +25,11 @@ $bp-small: 41em; // 656px
 		font-weight: 40rem;
 		margin-bottom: 10rem;
 
-		@media screen and (max-width: $bp-small) {
+		@media screen and (max-width: $bp-medium) {
 			justify-self: center;
 			align-self: center;
 			font-size: 4.5rem;
-			margin-bottom: 2rem;
-			padding-left: 0;
+			padding: 5rem 24rem 5rem 0;
 		}
 	}
 
@@ -42,6 +42,7 @@ $bp-small: 41em; // 656px
 		grid-template-areas:
 			'one'
 			'two'
-			'three';
+			'three'
+			'four';
 	}
 }
