@@ -11,12 +11,36 @@ import Reviews from '../../components/Reviews/reviews';
 import Navigation from '../../components/Navigation/navigation';
 import './home.scss';
 import { animateScroll as scroll } from 'react-scroll';
+import React, { useState, useEffect } from 'react';
 
 const scrollToTop = () => {
 	scroll.scrollToTop();
 };
 
 function Home() {
+	//state back-to-top button visibility, by default not visible:
+	const [visible, setVisible] = useState(false);
+
+	const scrollFunction = () => {
+		if (
+			document.body.scrollTop > 20 ||
+			document.documentElement.scrollTop > 20
+		) {
+			setVisible(true);
+		} else {
+			setVisible(false);
+		}
+	};
+
+	//useEffect to set up the scroll event listener
+	useEffect(() => {
+		window.addEventListener('scroll', scrollFunction);
+		//whatever we place after return will be invoked once we exit = clean up function
+		return () => {
+			window.removeEventListener('scroll', scrollFunction);
+		};
+	}, []);
+
 	return (
 		<div className='page-container'>
 			<Navigation />
@@ -30,7 +54,9 @@ function Home() {
 			<ContactMe id='contact' />
 			<Closing />
 			<Footer />
-			<button className='back-to-top' onClick={scrollToTop}>
+			<button
+				className={`${visible ? 'back-to-top show' : 'back-to-top'}`}
+				onClick={scrollToTop}>
 				Back to Top
 			</button>
 		</div>

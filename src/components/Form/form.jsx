@@ -101,7 +101,7 @@ function Form() {
 
 				<Button
 					btnClass='yellow-button'
-					text='Send'
+					text='SEND'
 					className='contact-form-button'
 				/>
 			</form>

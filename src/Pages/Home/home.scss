@@ -86,15 +86,19 @@ p {
 	line-height: 4rem;
 	padding: 0 2rem;
 	width: 15rem;
+	cursor: pointer;
 	color: white;
 	border: 0.1rem solid #fdb533;
 	border-radius: 0.5rem;
-	cursor: pointer;
-	transition: 0.5s;
+	transform: translateY(200%);
+	transition: 0.4s ease;
 
 	&:hover {
 		background-color: #3c3c3d;
 		color: #fdb533;
+	}
+	&.show {
+		transform: translateY(0);
 	}
 }
 
