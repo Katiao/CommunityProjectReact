@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 function Article({ id, title, snippet, date, length }) {
 	return (
-		/* this div should be replaced by article. article did not work */
 		<div className='post'>
 			<h4 className='heading'>{title}</h4>
 			<div className='post-info'>
