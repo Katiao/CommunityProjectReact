@@ -7,101 +7,102 @@ $bp-medium: 50em; // 800px
 $bp-small: 41em; // 656px
 
 .latest-works-cards {
-	display: grid;
-	margin: 0 10rem 0 10rem;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 20vw);
-	gap: 1.5rem;
+  display: grid;
+  margin: 0 10rem 0 10rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 20vw);
+  gap: 1.5rem;
 
-	@media screen and (max-width: $bp-medium) {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(4, 40vw);
-	}
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 40vw);
+  }
 
-	@media screen and (max-width: $bp-small) {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(8, 60vw);
-		row-gap: 3rem;
-	}
+  @media screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 60vw);
+    row-gap: 3rem;
+  }
 }
 
 .cardOne {
-	grid-row: 1 / span 2;
-	grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
 
-	@media screen and (max-width: $bp-medium) {
-		grid-row: 1 / 2;
-		grid-column: 1 / 2;
-	}
+  @media screen and (max-width: $bp-medium) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
 }
 .cardEight {
-	grid-row: 3 / 4;
-	grid-column: 3 / span 2;
+  grid-row: 3 / 4;
+  grid-column: 3 / span 2;
 
-	@media screen and (max-width: $bp-medium) {
-		grid-column: 2 / 3;
-	}
-	@media screen and (max-width: $bp-small) {
-		grid-row: 7 / 8;
-		grid-column: 1 / 2;
-	}
+  @media screen and (max-width: $bp-medium) {
+    grid-column: 2 / 3;
+  }
+  @media screen and (max-width: $bp-small) {
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
+  }
 }
 
 /* cards overlay effect */
 
 .cardhover {
-	position: relative;
+  position: relative;
 
-	& img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		opacity: 1;
-	}
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+  }
 
-	&:hover img {
-		opacity: 0.5;
-	}
+  &:hover img {
+    opacity: 0.5;
+  }
 
-	& .overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		bottom: 4.5rem;
-		opacity: 0;
-		line-height: 1rem;
-		transition: all 0.6s;
-		background: rgba(247, 212, 86, 0.7);
-		color: white;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+  & .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 4.5rem;
+    opacity: 0;
+    line-height: 1rem;
+    transition: all 0.6s;
+    background: rgba(247, 212, 86, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-		& h3 {
-			margin-bottom: 3rem;
-			font-size: 2rem;
-			cursor: pointer;
-		}
+    & h3 {
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
 
-		& i {
-			margin-bottom: 2rem;
-		}
+    & i {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
 
-		/* adding the animation push up when hovering over: targeting every direct child of the overlay */
-		& > * {
-			transform: translateY(2rem);
-			transition: transform 0.6s;
-		}
+    /* adding the animation push up when hovering over: targeting every direct child of the overlay */
+    & > * {
+      transform: translateY(2rem);
+      transition: transform 0.6s;
+    }
 
-		&:hover {
-			opacity: 1;
+    &:hover {
+      opacity: 1;
 
-			& > * {
-				transform: translateY(0);
-			}
-		}
-	}
+      & > * {
+        transform: translateY(0);
+      }
+    }
+  }
 }
