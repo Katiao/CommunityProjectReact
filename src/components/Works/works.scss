@@ -89,6 +89,7 @@ $bp-small: 41em; // 656px
     & i {
       margin-bottom: 2rem;
       font-size: 2rem;
+      cursor: pointer;
     }
 
     /* adding the animation push up when hovering over: targeting every direct child of the overlay */
