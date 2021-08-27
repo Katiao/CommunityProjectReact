@@ -9,8 +9,8 @@ function Works({ works }) {
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
+  const closeModalOnOverlay = (e) => {
+    e.target.classList.contains("modal-overlay") && setIsModalOpen(false);
   };
 
   return (
@@ -25,7 +25,12 @@ function Works({ works }) {
               <h3 onClick={openModal}>{title}</h3>
               <p>{subtitle}</p>
               {/* prop drilling img prop here. To refactor using context API */}
-              <Modal isModalOpen={isModalOpen} close={closeModal} image={img} />
+              <Modal
+                isModalOpen={isModalOpen}
+                setIsModalOpen={setIsModalOpen}
+                closeModalOnOverlay={closeModalOnOverlay}
+                image={img}
+              />
             </div>
           </div>
         );
